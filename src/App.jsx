@@ -105,6 +105,7 @@ function TicTacToe() {
         <button onClick={() => goTo(move)} >{desc}</button>
       </li>
     )
+    
   });
 
   return (
@@ -170,7 +171,8 @@ function Board({ xisNext, squares, handleHistory }) {
         }}
         style={{
           margin: "10px 0",
-          borderRadius: "10px"
+          borderRadius: "10px",
+          background: "rgb(71, 250, 74)"
         }}
       >
         Reset
@@ -204,6 +206,7 @@ function App() {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
+        color: "white"
       }}
     >
       <h1>{gameHeading}</h1>
